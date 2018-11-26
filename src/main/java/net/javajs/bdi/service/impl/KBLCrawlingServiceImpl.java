@@ -75,6 +75,7 @@ public class KBLCrawlingServiceImpl implements KBLCrawlingService {
 				record.setHomeScore(Integer.parseInt(scores[0]));
 				record.setAwayName(teamRgt.get(i).text());
 				record.setAwayScore(Integer.parseInt(scores[1]));
+				record.setIsTransfer(false);
 				recordList.add(record);
 			}
 		}
